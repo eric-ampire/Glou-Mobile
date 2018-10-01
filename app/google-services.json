@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "792074873998",
+    "firebase_url": "https://glouplatform-39a8b.firebaseio.com",
+    "project_id": "glouplatform-39a8b",
+    "storage_bucket": "glouplatform-39a8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792074873998:android:10318db7d0c8a238",
+        "android_client_info": {
+          "package_name": "com.gmc.gloumobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792074873998-uv9qdvnhoamauarieq87pobmnboq4ll0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmc.gloumobile",
+            "certificate_hash": "7f21430aec10403aeb5bbeec7858956cade0e8d4"
+          }
+        },
+        {
+          "client_id": "792074873998-lacg6tccv4hksl91t3930gcu1p345gd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkzp94tM7CaxuiuGTz0hRFPXaWwXngNug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792074873998-lacg6tccv4hksl91t3930gcu1p345gd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
