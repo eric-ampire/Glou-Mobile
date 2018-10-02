@@ -7,16 +7,12 @@ import android.os.Bundle;
 
 public class splashScreen extends AppCompatActivity {
 
-    private boolean backbtnpress;
-    private Handler m_Handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        m_Handler = new Handler();
-
-        m_Handler.postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 finish();
