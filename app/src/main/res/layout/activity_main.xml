@@ -10,5 +10,5 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME HOME PAGE" />
+        android:text="@string/home" />
 </android.support.constraint.ConstraintLayout>
