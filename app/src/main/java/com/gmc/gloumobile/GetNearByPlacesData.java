@@ -3,7 +3,13 @@ package com.gmc.gloumobile;
 import android.os.AsyncTask;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +43,7 @@ public class GetNearByPlacesData extends AsyncTask<Object , String , String>
                 {
                     for (int i = 0; i < nearbyPlacesList.size(); i++)
                     {
-          /*  MarkerOptions markerOptions = new MarkerOptions();
+          MarkerOptions markerOptions = new MarkerOptions();
             HashMap<String , String > googlePlace = nearbyPlacesList.get(i);
 
             String placeName = googlePlace.get("place_name");
@@ -51,8 +57,8 @@ public class GetNearByPlacesData extends AsyncTask<Object , String , String>
                     (BitmapDescriptorFactory.HUE_BLUE));
 
             mMap.addMarker(markerOptions);
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng));
-            mMap.animateCamera(CameraUpdateFactory.zoomTo(10));*/
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(10));
 
 
                     }
