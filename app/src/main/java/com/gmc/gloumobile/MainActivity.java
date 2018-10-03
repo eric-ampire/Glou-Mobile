@@ -120,7 +120,15 @@ import android.os.Bundle;
             mMap.setMyLocationEnabled(true);
         }
     }
-    
+    protected synchronized void buildGoogleApiClient()
+    {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+        mGoogleApiClient.connect();
+    }
 
 
 
