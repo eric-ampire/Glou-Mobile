@@ -74,7 +74,33 @@ import android.os.Bundle;
 
 
     }
-    
+    private boolean CheckGooglePlayServices()
+    {
+        GoogleApiAvailability googleApi = GoogleApiAvailability.getInstance();
+        int result = googleApi.isGooglePlayServicesAvailable(this);
+        if(result != ConnectionResult.SUCCESS)
+        {
+            if(googleApi.isUserResolvableError(result))
+            {
+                googleApi.getErrorDialog(this,result,0).show();
+            }
+            return false;
+        }
+        return true;
+    }
+    /*
+    *
+    * *
+    * *
+    * *
+    * *
+    * *
+    * *
+    * *
+    * *
+     */
+
+
     private String getUrl(double latitude , double longitude, String
             nearbyPlace)
     {
