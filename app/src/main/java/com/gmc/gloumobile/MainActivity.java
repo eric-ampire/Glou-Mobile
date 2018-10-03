@@ -100,6 +100,29 @@ import android.os.Bundle;
     * *
      */
 
+    public void onMapReady(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+
+        //Initialisation du Google Play Service
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        {
+            if(ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+            {
+                buildGoogleApiClient();
+                mMap.setMyLocationEnabled(true);
+            }
+        }else
+        {
+            buildGoogleApiClient();
+            mMap.setMyLocationEnabled(true);
+        }
+    }
+    
+
+
 
     private String getUrl(double latitude , double longitude, String
             nearbyPlace)
