@@ -4,15 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splashScreen">
+    tools:context=".splashScreen"
+    android:padding="20dp"
+    android:background="">
 
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name or Email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="204dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:text="@string/btnLogIn"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnfb"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="482dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Glou Mobile</string>
     <string name="home">Welcome home page</string>
+    <string name="login">Name or Email</string>
+    <string name="pass">Password</string>
+    <string name="btnLogIn">Log In</string>
+    <string name="btnfb">s'identifier avec facebook</string>
 </resources>
