@@ -1,8 +1,8 @@
 package com.gmc.gloumobile;
 
 import android.os.AsyncTask;
-import android.graphics.Bitmap;
-import android.os.AsyncTask;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+@RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
 public class GetNearByPlacesData extends AsyncTask<Object , String , String>
         {
             String googlePlacesData;

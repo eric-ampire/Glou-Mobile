@@ -26,14 +26,4 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
-    <TextView
-        android:id="@+id/ID_tv2"
-        android:layout_width="148dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="64dp"
-        android:text="Bonjour ici"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="24sp" />
 </RelativeLayout>
